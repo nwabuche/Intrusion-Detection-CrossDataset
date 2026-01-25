@@ -1,0 +1,66 @@
+{
+  "dataset": "NSL-KDD",
+  "intra": {
+    "DT": {
+      "model": "Decision Tree",
+      "dataset": "NSL-KDD",
+      "experiment": "intra",
+      "accuracy": 0.9947145165634258,
+      "precision_attack": 0.9944040290990487,
+      "recall_attack": 0.9946127474987756,
+      "f1_attack": 0.9945083773479311,
+      "confusion_matrix": [
+        [
+          15331,
+          80
+        ],
+        [
+          77,
+          14216
+        ]
+      ],
+      "roc_auc": 0.9979
+    },
+    "RF": {
+      "model": "Random Forest",
+      "dataset": "NSL-KDD",
+      "experiment": "intra",
+      "accuracy": 0.9961284675464583,
+      "precision_attack": 0.9967068385650224,
+      "recall_attack": 0.9952424263625551,
+      "f1_attack": 0.9959740941711885,
+      "confusion_matrix": [
+        [
+          15364,
+          47
+        ],
+        [
+          68,
+          14225
+        ]
+      ],
+      "roc_auc": 0.9997
+    },
+    "LR": {
+      "accuracy": 0.9548545650417453,
+      "precision_attack": 0.9593559370123422,
+      "recall_attack": 0.9462674036241517,
+      "f1_attack": 0.9527667218484731,
+      "roc_auc": 0.990083550997453,
+      "confusion_matrix": {
+        "tn": 14838,
+        "fp": 573,
+        "fn": 768,
+        "tp": 13525
+      }
+    }
+  },
+  "cache_info": {
+    "n_samples": 148517,
+    "hash_dim": 2048,
+    "label_counts": {
+      "normal": 77054,
+      "attack": 71463
+    }
+  }
+}

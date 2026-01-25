@@ -1,0 +1,20 @@
+{
+    "model": "Decision Tree",
+    "dataset": "NSL-KDD",
+    "experiment": "intra",
+    "accuracy": 0.9947145165634258,
+    "precision_attack": 0.9944040290990487,
+    "recall_attack": 0.9946127474987756,
+    "f1_attack": 0.9945083773479311,
+    "confusion_matrix": [
+        [
+            15331,
+            80
+        ],
+        [
+            77,
+            14216
+        ]
+    ],
+    "roc_auc": 0.9979
+}

@@ -1,0 +1,20 @@
+{
+    "model": "Random Forest",
+    "dataset": "NSL-KDD",
+    "experiment": "intra",
+    "accuracy": 0.9961284675464583,
+    "precision_attack": 0.9967068385650224,
+    "recall_attack": 0.9952424263625551,
+    "f1_attack": 0.9959740941711885,
+    "confusion_matrix": [
+        [
+            15364,
+            47
+        ],
+        [
+            68,
+            14225
+        ]
+    ],
+    "roc_auc": 0.9997
+}

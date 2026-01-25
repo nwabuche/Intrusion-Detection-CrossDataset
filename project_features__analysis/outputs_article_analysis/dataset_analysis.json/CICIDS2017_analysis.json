@@ -1,0 +1,52 @@
+{
+  "dataset": "CICIDS2017",
+  "intra": {
+    "DT": {
+      "accuracy": 0.9985440869898106,
+      "precision_attack": 0.9954333611166547,
+      "recall_attack": 0.9959478030044985,
+      "f1_attack": 0.9956905156116063,
+      "roc_auc": 0.9978676001040875,
+      "confusion_matrix": {
+        "tn": 418623,
+        "fp": 389,
+        "fn": 345,
+        "tp": 84794
+      }
+    },
+    "RF": {
+      "accuracy": 0.9986254118309792,
+      "precision_attack": 0.995575117370892,
+      "recall_attack": 0.9962884224620914,
+      "f1_attack": 0.9959316421958565,
+      "roc_auc": 0.9997339488950808,
+      "confusion_matrix": {
+        "tn": 418635,
+        "fp": 377,
+        "fn": 316,
+        "tp": 84823
+      }
+    },
+    "LR": {
+      "accuracy": 0.8954717931730771,
+      "precision_attack": 0.6235028971272376,
+      "recall_attack": 0.9618271297525224,
+      "f1_attack": 0.7565642380679614,
+      "roc_auc": 0.973188270437388,
+      "confusion_matrix": {
+        "tn": 369564,
+        "fp": 49448,
+        "fn": 3250,
+        "tp": 81889
+      }
+    }
+  },
+  "cache_info": {
+    "n_samples": 200000,
+    "hash_dim": 2048,
+    "label_counts": {
+      "normal": 166122,
+      "attack": 33878
+    }
+  }
+}

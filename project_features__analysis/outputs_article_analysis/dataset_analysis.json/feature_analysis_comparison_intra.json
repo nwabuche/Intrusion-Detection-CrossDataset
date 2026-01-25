@@ -1,0 +1,73 @@
+{
+  "table_name": "feature_analysis_comparison_intra",
+  "source_files": {
+    "NSL-KDD": {
+      "DT": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/NSL-KDD/intra_dt_metrics.json",
+      "RF": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/NSL-KDD/intra_rf_metrics.json",
+      "LR": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/NSL-KDD/intra_lr_metrics.json"
+    },
+    "CICIDS2017": {
+      "DT": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/CICIDS2017/intra_dt_metrics.json",
+      "RF": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/CICIDS2017/intra_rf_metrics.json",
+      "LR": "/content/drive/MyDrive/IDS_Project/outputs_article_analysis/CICIDS2017/intra_lr_metrics.json"
+    }
+  },
+  "rows": [
+    {
+      "Transfer Direction": "NSL-KDD (Intra)",
+      "Model": "DT",
+      "Accuracy (Mean\u00b1Std)": "0.9947 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.9944 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9946 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.9945 \u00b1 0.0000"
+    },
+    {
+      "Transfer Direction": "NSL-KDD (Intra)",
+      "Model": "RF",
+      "Accuracy (Mean\u00b1Std)": "0.9961 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.9967 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9952 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.9960 \u00b1 0.0000"
+    },
+    {
+      "Transfer Direction": "NSL-KDD (Intra)",
+      "Model": "LR",
+      "Accuracy (Mean\u00b1Std)": "0.9549 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.9594 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9463 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.9528 \u00b1 0.0000"
+    },
+    {
+      "Transfer Direction": "",
+      "Model": "",
+      "Accuracy (Mean\u00b1Std)": "",
+      "Precision (Mean\u00b1Std)": "",
+      "Recall (Mean\u00b1Std)": "",
+      "F1 (Mean\u00b1Std)": ""
+    },
+    {
+      "Transfer Direction": "CICIDS2017 (Intra)",
+      "Model": "DT",
+      "Accuracy (Mean\u00b1Std)": "0.9985 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.9954 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9959 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.9957 \u00b1 0.0000"
+    },
+    {
+      "Transfer Direction": "CICIDS2017 (Intra)",
+      "Model": "RF",
+      "Accuracy (Mean\u00b1Std)": "0.9986 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.9956 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9963 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.9959 \u00b1 0.0000"
+    },
+    {
+      "Transfer Direction": "CICIDS2017 (Intra)",
+      "Model": "LR",
+      "Accuracy (Mean\u00b1Std)": "0.8955 \u00b1 0.0000",
+      "Precision (Mean\u00b1Std)": "0.6235 \u00b1 0.0000",
+      "Recall (Mean\u00b1Std)": "0.9618 \u00b1 0.0000",
+      "F1 (Mean\u00b1Std)": "0.7566 \u00b1 0.0000"
+    }
+  ]
+}

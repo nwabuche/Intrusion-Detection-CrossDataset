@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.1694,
+  "precision_attack": 0.1694,
+  "recall_attack": 1.0,
+  "f1_attack": 0.2897212245596032,
+  "roc_auc": 0.5391549682900884
+}
