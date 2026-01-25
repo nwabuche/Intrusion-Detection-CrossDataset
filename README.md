@@ -4,7 +4,7 @@
 
 ## Overview
 
-I built an academic Intrusion Detection System (IDS) project in Google Colab using **NSL-KDD** and **CICIDS2017** datasets. The goal is to evaluate how well traditional machine learning models detect attacks in a **binary classification** setting (**0 = Normal**, **1 = Attack**) under both **intra-dataset** and **cross-dataset** testing. I implemented **Decision Tree (DT)**, **Random Forest (RF)**, and **Logistic Regression (LR)**, saved all metrics as JSON, and generated figures such as confusion matrices, ROC curves (where applicable), and error histograms. The full report is maintained in the project outputs folder and is updated automatically as new experiments are completed.
+I built an academic Intrusion Detection System (IDS) project in Google Colab using **NSL-KDD** and **CICIDS2017** datasets. The goal is to evaluate how well traditional machine learning models detect attacks in a **binary classification** setting (**0 = Normal**, **1 = Attack**) under both **intra-dataset** and **cross-dataset** testing. I implemented **Decision Tree (DT)**, **Random Forest (RF)**, and **Logistic Regression (LR)**, saved all metrics as JSON, and generated figures such as confusion matrices, ROC curves (where applicable), and error histograms. The full report is maintained in the project outputs folder. 
 
 <!-- OVERVIEW_END -->
 
