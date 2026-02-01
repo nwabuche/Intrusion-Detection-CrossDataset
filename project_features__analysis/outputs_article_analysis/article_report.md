@@ -66,12 +66,12 @@ Overall, the results indicate that CICIDS2017 is a more challenging dataset than
 
 | Dataset    | Model               | Experiment    |   Accuracy |   Precision |   Recall |   F1-Score |   ROC-AUC |
 |:-----------|:--------------------|:--------------|-----------:|------------:|---------:|-----------:|----------:|
-| NSL-KDD    | Random Forest       | Intra-dataset |      0.996 |       0.997 |    0.995 |      0.996 |     1     |
-| NSL-KDD    | Decision Tree       | Intra-dataset |      0.995 |       0.994 |    0.995 |      0.995 |     0.998 |
-| NSL-KDD    | Logistic Regression | Intra-dataset |      0.955 |       0.959 |    0.946 |      0.953 |     0.99  |
-| CICIDS2017 | Random Forest       | Intra-dataset |      0.999 |       0.996 |    0.996 |      0.996 |     1     |
-| CICIDS2017 | Decision Tree       | Intra-dataset |      0.999 |       0.995 |    0.996 |      0.996 |     0.998 |
-| CICIDS2017 | Logistic Regression | Intra-dataset |      0.895 |       0.624 |    0.962 |      0.757 |     0.973 |
+| NSL-KDD    | Random Forest       | Intra-dataset |      0.996 |       0.997 |    0.995 |      0.996 |     N/A     |
+| NSL-KDD    | Decision Tree       | Intra-dataset |      0.995 |       0.994 |    0.995 |      0.995 |     N/A|
+| NSL-KDD    | Logistic Regression | Intra-dataset |      0.955 |       0.959 |    0.946 |      0.953 |     N/A |
+| CICIDS2017 | Random Forest       | Intra-dataset |      0.999 |       0.996 |    0.996 |      0.996 |     N/A     |
+| CICIDS2017 | Decision Tree       | Intra-dataset |      0.999 |       0.995 |    0.996 |      0.996 |     N/A|
+| CICIDS2017 | Logistic Regression | Intra-dataset |      0.895 |       0.624 |    0.962 |      0.757 |     N/A |
 
 Table 2 presents the intra-dataset performance of all models on NSL-KDD and CICIDS2017.
 Random Forest achieves the best overall performance across most evaluation metrics.
