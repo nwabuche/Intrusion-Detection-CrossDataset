@@ -1,7 +1,7 @@
 # Network Intrusion Detection Using Traditional Machine Learning
 
 ## Abstract
-In this project, I investigate the performance of traditional machine learning algorithms for network intrusion detection. I carry out experiments using two widely used benchmark datasets: NSL-KDD and CICIDS2017. I evaluate three classifiers—Decision Tree, Random Forest, and Logistic Regression—under an intra-dataset experimental setting. Model performance is assessed using accuracy, precision, recall, F1-score, confusion matrices, and ROC-AUC. Through these experiments, I aim to understand the strengths and limitations of classical machine learning approaches when applied to network traffic data, particularly in the presence of class imbalance.
+In this project, I investigate the performance of traditional machine learning algorithms for network intrusion detection. I carry out experiments using two widely used benchmark datasets: NSL-KDD and CICIDS2017. I evaluate three classifiers—Decision Tree, Random Forest, and Logistic Regression under an intra-dataset experimental setting. Model performance is assessed using accuracy, precision, recall, F1-score, confusion matrices, and ROC-AUC. Through these experiments, I aim to understand the strengths and limitations of classical machine learning approaches when applied to network traffic data, particularly in the presence of class imbalance.
 
 ## 1. Introduction
 Network Intrusion Detection Systems (NIDS) are an essential part of modern network security, as they help identify malicious activities within network traffic. While deep learning approaches are increasingly popular, traditional machine learning techniques are still widely used due to their interpretability, lower computational requirements, and strong baseline performance on structured network data.
@@ -18,7 +18,7 @@ Before training the models, I apply a consistent preprocessing pipeline to both 
 ### 3.3 Handling Class Imbalance
 Both NSL-KDD and CICIDS2017 exhibit class imbalance, with attack traffic either dominating or being underrepresented depending on the dataset. To address this issue, I apply different strategies depending on the model.
 
-For Decision Tree and Random Forest classifiers, I apply the Synthetic Minority Over-sampling Technique (SMOTE) only to the training data. This allows the models to learn from a more balanced class distribution without altering the original test set.
+For Decision Tree and Random Forest classifiers and Logistic Regression on NSL-KDD dataset. I apply the Synthetic Minority Over-sampling Technique (SMOTE) only to the training data. This allows the models to learn from a more balanced class distribution without altering the original test set.
 
 For Logistic Regression on CICIDS2017, applying SMOTE on the full training data is computationally expensive due to the dataset’s large size. Therefore, I use class-weight balancing combined with stratified subsampling of the training data. This approach reduces computational cost while still allowing the model to account for class imbalance.
 
@@ -44,9 +44,9 @@ Figures illustrating the confusion matrices, ROC curves, and false positive vers
 
 CICIDS2017 presents a more challenging evaluation scenario due to its large scale, higher feature diversity, and severe class imbalance. As a result, model performance differs noticeably from NSL-KDD.
 
-The Decision Tree model performs reasonably well but shows sensitivity to class imbalance. While it detects a substantial portion of attack traffic, the confusion matrix reveals an increase in false negatives compared to NSL-KDD, indicating that some attacks are misclassified as normal traffic.
+The Decision Tree model performs reasonably well but shows sensitivity to misclassification.  While it detects a substantial portion of attack traffic, the confusion matrix reveals an increase in false negatives compared to NSL-KDD, indicating that some attacks are misclassified as normal traffic.
 
-Random Forest again demonstrates strong performance on CICIDS2017. Its ensemble nature allows it to better capture complex patterns in the data, leading to improved recall for attack traffic. However, the results also show that class imbalance significantly affects model behavior, particularly in terms of false positives.
+Random Forest again demonstrates strong performance on CICIDS2017. Its ensemble nature allows it to better capture complex patterns in the data, leading to improved recall for attack traffic.
 
 For Logistic Regression, I apply class-weight balancing and stratified subsampling to manage computational cost. Despite its simplicity, Logistic Regression achieves competitive performance and produces a smooth ROC curve. However, its linear nature limits its ability to fully capture the complex relationships present in CICIDS2017, resulting in lower recall compared to Random Forest.
 
@@ -66,12 +66,12 @@ Overall, the results indicate that CICIDS2017 is a more challenging dataset than
 
 | Dataset    | Model               | Experiment    |   Accuracy |   Precision |   Recall |   F1-Score |   ROC-AUC |
 |:-----------|:--------------------|:--------------|-----------:|------------:|---------:|-----------:|----------:|
-| NSL-KDD    | Random Forest       | Intra-dataset |      0.996 |       0.997 |    0.995 |      0.996 |     N/A     |
-| NSL-KDD    | Decision Tree       | Intra-dataset |      0.995 |       0.994 |    0.995 |      0.995 |     N/A|
-| NSL-KDD    | Logistic Regression | Intra-dataset |      0.955 |       0.959 |    0.946 |      0.953 |     N/A |
-| CICIDS2017 | Random Forest       | Intra-dataset |      0.999 |       0.996 |    0.996 |      0.996 |     N/A     |
-| CICIDS2017 | Decision Tree       | Intra-dataset |      0.999 |       0.995 |    0.996 |      0.996 |     N/A|
-| CICIDS2017 | Logistic Regression | Intra-dataset |      0.895 |       0.624 |    0.962 |      0.757 |     N/A |
+| NSL-KDD    | Random Forest       | Intra-dataset |      0.996 |       0.997 |    0.995 |      0.996 |     0.9998     |
+| NSL-KDD    | Decision Tree       | Intra-dataset |      0.995 |       0.994 |    0.995 |      0.995 |     0.9950|
+| NSL-KDD    | Logistic Regression | Intra-dataset |      0.955 |       0.959 |    0.946 |      0.953 |     0.9936 |
+| CICIDS2017 | Random Forest       | Intra-dataset |      0.999 |       0.996 |    0.996 |      0.996 |     0.9997    |
+| CICIDS2017 | Decision Tree       | Intra-dataset |      0.999 |       0.995 |    0.996 |      0.996 |     0.9979|
+| CICIDS2017 | Logistic Regression | Intra-dataset |      0.895 |       0.624 |    0.962 |      0.757 |     0.9732 |
 
 Table 2 presents the intra-dataset performance of all models on NSL-KDD and CICIDS2017.
 Random Forest achieves the best overall performance across most evaluation metrics.
@@ -89,7 +89,7 @@ Logistic Regression is more affected by class imbalance, particularly on CICIDS2
 | CICIDS2017 (Intra)   | RF      | 0.9986 ± 0.0000         | 0.9956 ± 0.0000          | 0.9963 ± 0.0000       | 0.9959 ± 0.0000   |
 | CICIDS2017 (Intra)   | LR      | 0.8955 ± 0.0000         | 0.6235 ± 0.0000          | 0.9618 ± 0.0000       | 0.7566 ± 0.0000   |
 
-*Precision, Recall, and F1 correspond to the Attack class (label = 1). If only one run is available, Std is 0.0000.*
+
 
 <!-- TABLE4_START -->
 
