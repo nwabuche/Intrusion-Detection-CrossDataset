@@ -231,4 +231,5 @@ In addition, this work focuses on a limited set of traditional machine learning 
 4. Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic minority over-sampling technique. *Journal of Artificial Intelligence Research*, 16, 321–357.
 <!-- REFERENCES_END -->
  LinK to the dataset:NSL-KDD: https://www.kaggle.com/datasets/hassan06/nslkdd
+
  Link to the dataset:CICIDS2017: https://www.unb.ca/cic/datasets/ids-2017.html
