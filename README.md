@@ -103,7 +103,7 @@ During execution, the notebooks produce evaluation metrics and visualizations th
 
 | Train | Test | Model | Accuracy | Precision (Attack) | Recall (Attack) | F1 (Attack) | ROC-AUC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  | cross_dataset_CICILR | 51.88% | 0.00% | 0.00% | 0.00% | 0.4905 |
+|CICIDS2017 → Test NSL-KDD  |  | cross_dataset_random forest | 51.88% | 0.00% | 0.00% | 0.00% | 0.4905 |
 |  |  | cross_dataset_CICILR | 16.94% | 16.94% | 100.00% | 28.97% | 0.5392 |
 |  |  | cross_dataset_CICIRF | 68.53% | 11.97% | 13.50% | 12.69% | 0.4923 |
 |  |  | cross_dataset_CICIRF | 51.88% | 0.00% | 0.00% | 0.00% | 0.4989 |
