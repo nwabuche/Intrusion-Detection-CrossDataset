@@ -103,12 +103,13 @@ During execution, the notebooks produce evaluation metrics and visualizations th
 
 | Train | Test | Model | Accuracy | Precision (Attack) | Recall (Attack) | F1 (Attack) | ROC-AUC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|CICIDS2017 → Test NSL-KDD  |  | cross_dataset_random forest | 51.88% | 0.00% | 0.00% | 0.00% | 0.4905 |
-|  |  | cross_dataset_CICILR | 16.94% | 16.94% | 100.00% | 28.97% | 0.5392 |
-|  |  | cross_dataset_CICIRF | 68.53% | 11.97% | 13.50% | 12.69% | 0.4923 |
-|  |  | cross_dataset_CICIRF | 51.88% | 0.00% | 0.00% | 0.00% | 0.4989 |
-|  |  | cross_dataset_CICIDT | 52.15% | 100.00% | 0.55% | 1.10% | 0.5028 |
-|  |  | cross_dataset_CICIDT | 16.94% | 16.94% | 100.00% | 28.97% | 0.5000 |
+|CICIDS2017 → Test NSL-KDD  |  | cross_dataset_random forest | 51.88% | 0.00% | 0.00% | 0.00% |N/A  |
+|NSL-KDD → Test CICIDS2017  |  | cross_dataset_random forest | 32.44% | 15.30% | 65.88% | 24.83% | N/A |
+ CICIDS2017 → Test NSL-KDD |  | cross_dataset_decision tree | 52.15.53% | 100.00% | 0.00% | 0..01% |N/A |
+| NSL-KDD → Test CICIDS2017  |  | cross_dataset_decision tree | 16.94% |16.94% |100.00% | 28.97% | N/A |
+|CICIDS2017 → Test NSL-KDD  |  | cross_dataset_LR | 52.88% | 0.00% |0.00% |0.00% |N/A  |
+|NSL-KDD → Test CICIDS2017  |  | cross_dataset_LR | 16.94% | 16.94% | 100.00% | 28.97% |N/A
+|
 <!-- RESULTS_END -->
 
 <!-- GENERATED_OUTPUTS_START -->
